@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.example.appchat.customview.CircleImage
+        android:id="@+id/imageview_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/account_icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageview_avatar"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_name_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Cena"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textview_phone_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0909090909"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_into_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/checkbox_hint_contact"
+        android:text="@string/hint_joined"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkbox_hint_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:button="@drawable/custom_checkbox"
+        android:clickable="false" />
+
+</RelativeLayout>

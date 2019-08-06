@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorGrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.home.tabsetting.about.AboutActivity">
+
+    <android.support.v7.widget.Toolbar
+        app:title="@string/tab_title_about"
+        android:background="@color/colorBlue"
+        app:titleTextColor="@color/colorWhile"
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/layout_about"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_below="@id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/icon_telegram"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+        <TextView
+            android:text="@string/text_textview_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkGrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_below="@id/layout_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:text="@string/text_textview_minhtri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:text="@string/text_textview_mail_minhtri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkGrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_textview_nguyensi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:text="@string/text_textview_mail_nguyensi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkGrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

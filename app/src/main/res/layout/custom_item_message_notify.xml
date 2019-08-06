@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp">
+
+    <LinearLayout
+        android:id="@+id/linear_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="4"
+            android:background="@color/colorWhile" />
+
+        <TextView
+            android:id="@+id/text_view_setion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="20/9"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="4"
+            android:background="@color/colorWhile" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_section"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_border_button_enable"
+        android:backgroundTint="@color/colorWhile"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <com.example.appchat.customview.CircleImage
+            android:id="@+id/imageview_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/account_icon" />
+
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Bill Gates"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/joined"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

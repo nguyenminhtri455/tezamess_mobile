@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"></string>
+
+    <!--UI Login-->
+    <string name="tab_title_login">Đăng Nhập</string>
+    <string name="text_edittext_phonenumber">Số điện thoại:</string>
+    <string name="text_edittext_password">Mật khẩu:</string>
+    <string name="text_button_login">ĐĂNG NHẬP</string>
+    <string name="text_textview_attention_login">Nếu bạn chưa có tài khoản. Vui lòng nhấn nút bên dưới để đăng ký!</string>
+    <string name="text_button_register">ĐĂNG KÝ</string>
+    <string name="notification_login">Nhập thông tin đầy đủ!</string>
+    <string name="text_textview_forgot_password">Quên mật khẩu?</string>
+
+    <!--UI Register-->
+    <string name="tab_title_register">Đăng ký</string>
+    <string name="text_textview_attention_register">Tên đây đủ của bạn là gì ?</string>
+    <string name="text_textview_attention2_register">Sử dụng tên thật làm cho bạn dễ nhận biết hơn !</string>
+    <string name="text_edittext_name_register">Nhập tên đầy đủ của bạn:</string>
+    <string name="text_button_next_register">TIẾP THEO</string>
+
+    <!--UI Register 2-->
+    <string name="tab_title_register2">Đăng ký</string>
+    <string name="text_textview_attention_register2">Số điện thoại của bạn là gì?</string>
+    <string name="text_textview_attention2_register2">Hãy đăng ký số điện thoại và đặt mật khẩu cho tài khoản!</string>
+    <string name="text_edittext_phone_register2">Nhập số điện thoại của bạn:</string>
+    <string name="text_edittext_password_register2">Nhập mật khẩu:</string>
+    <string name="text_button_login_register2">ĐĂNG NHẬP</string>
+
+    <!--UI Home-->
+    <string name="tab_item_message">Tin Nhắn</string>
+    <string name="tab_item_contact">Danh Bạ</string>
+    <string name="tab_item_timeline">Bài Viết</string>
+    <string name="tab_item_profile">Thông Tin</string>
+    <string name="tab_item_setting">Cài Đặt</string>
+
+    <!--UI Message-->
+    <string name="text_textview_message">Không có cuộc trò chuyện nào gần đây!</string>
+    <string name="text_button_create_message">Hãy kết bạn để cùng trò chuyện</string>
+    <string name="create_group">Tạo nhóm</string>
+
+    <!--UI Contact-->
+    <string name="text_textview_contact_online">Đang hoạt động</string>
+    <string name="text_textview_all_contact">Danh bạ</string>
+
+    <!--UI TimeLine-->
+    <string name="tab_title_timeline">Dòng Thời Gian</string>
+    <string name="text_textview_status">Hôm nay bạn thế nào?</string>
+    <string name="post_status">Đăng trạng thái</string>
+    <string name="post">Đăng</string>
+    <string name="enter_body">Hãy nhập nội dung trạng thái</string>
+    <string name="notify_status">đã cập nhật trạng thái</string>
+
+    <!--UI Profile-->
+    <string name="tab_title_profile">Thông Tin Cá Nhân</string>
+    <string name="male">Mam</string>
+    <string name="female">Nữ</string>
+
+    <!--UI Setting-->
+    <string name="tab_title_setting">Cài Đặt</string>
+    <string name="text_textview_profile">Trang Cá Nhân</string>
+    <string name="text_textview_language">Ngôn Ngữ</string>
+    <string name="text_textview_about">Giới Thiệu</string>
+    <string name="text_textview_logout">Đăng Xuất</string>
+    <string name="text_textview_changepassword">Thay Đổi Mật Khẩu</string>
+
+    <!--Room Chat-->
+    <string name="tab_title_roomchat">Tin Nhắn</string>
+    <string name="texthint_edittext_roomchat">Tin nhắn</string>
+    <string name="textview_text_online_roomchat">Vừa mới truy cập</string>
+    <string name="textview_text_offline_roomchat">Truy cập lần cuối lúc </string>
+
+    <!--View Profile Activity-->
+    <string name="tab_title_view_profile">Thông Tin Cá Nhân</string>
+    <string name="textview_name_view_profile">Tên</string>
+    <string name="textview_email_view_profile">Email giải cứu</string>
+    <string name="textview_verify_email_view_profile">Xác nhận địa chỉ email...</string>
+    <string name="textview_gender_view_profile">Giới tính</string>
+    <string name="textview_birthday_view_profile">Ngày sinh</string>
+    <string name="textview_phone_view_profile">Số điện thoại</string>
+    <string name="text_button_view_profile">Chỉnh sửa</string>
+
+    <!--Edit Profile Activity-->
+    <string name="tab_title_edit_profile">Chỉnh Sửa Thông Tin</string>
+    <string name="textview_male_view_profile">Nam</string>
+    <string name="textview_female_view_profile">Nữ</string>
+    <string name="text_button_edit_profile">Cập Nhật</string>
+
+    <!--Notification Activity-->
+    <string name="tab_title_notification">Thông báo mới!</string>
+
+    <!--About Activity-->
+    <string name="tab_title_about">Giới Thiệu</string>
+
+    <!--ChangePass Activity-->
+    <string name="tab_title_changepass">Thay Đổi Mật Khẩu</string>
+    <string name="hint_edittext_password_using">Mật khẩu cũ</string>
+    <string name="hint_edittext_password_new">Mật khẩu mới</string>
+    <string name="hint_edittext_password_reenter">Nhập lại mật khẩu</string>
+    <string name="text_button_update_password">CẬP NHẬT</string>
+
+    <!--Verification Email Activity-->
+    <string name="tab_title_verification_email">Email xác thực</string>
+    <string name="text_textview_note_confirm_email">Hãy điền địa chỉ email của bạn. Chúng tôi sẽ giải cứu bạn khi bạn quên mật khẩu.</string>
+    <string name="hint_edittext_email_address">Địa chỉ email: abc@gmail.com</string>
+    <string name="text_button_confirm_email">lưu thay đổi</string>
+
+
+    <!--Language Activity-->
+    <string name="tab_title_language">Ngôn Ngữ</string>
+    <string name="text_textview_change_language">Thay Đổi Ngôn Ngữ</string>
+    <string name="text_textview_vietnamese_language">Vietnamese</string>
+    <string name="text_textview_english_language">English</string>
+
+    <!--Search Activity-->
+    <string name="tab_title_search">Tìm Kiếm Bạn Bè</string>
+    <string name="text_textview_note_addfriend">Kết bạn bằng số điện thoại</string>
+    <string name="hint_edittext_note_addfriend">Nhập số điện thoại của bạn</string>
+    <string name="text_button_search">Tìm Kiếm</string>
+    <string name="text_textview_requets_addfriend">Lời mời kết bạn</string>
+    <string name="text_textview_suggest_addfriend">Những người bạn có thể biết</string>
+    <string name="text_button_add">Thêm</string>
+    <string name="text_button_agree">Đồng Ý</string>
+    <string name="text_button_delete">Xóa</string>
+
+    <!--Profile User Activity-->
+    <string name="tab_title_profileuser">Thông Tin Cá Nhân</string>
+    <string name="title_unfriend">Xác nhận hủy kết bạn</string>
+    <string name="confirm_unfriend">Bạn muốn hủy kết bạn với</string>
+    <string name="agree">Đồng ý</string>
+    <string name="cancel">Hủy</string>
+    <string name="delete">Xóa</string>
+    <string name="un_friend">Hủy kết bạn</string>
+    <string name="add_friend">Kết bạn</string>
+
+    <!--General Use-->
+    <string name="text_textview_name">Tên</string>
+    <string name="text_textview_gender">Nam</string>
+    <string name="text_textview_birthday">02/01/1997</string>
+    <string name="text_textview_phone">0362393986</string>
+    <string name="text_textview_content">Bạn: I love you baby</string>
+    <string name="text_textview_time">16:03</string>
+    <string name="text_textview_create_time">5 hours ago</string>
+    <string name="text_textview_create_status">Sáng sớm đi học, bây giờ quá buồn ngủ..</string>
+    <string name="text_textview_like">5k</string>
+    <string name="text_textview_comment">4k</string>
+    <string name="text_textview_content_message">Hello! Chào Cậu..</string>
+    <string name="text_textview_content_comment">Dạo này ăn gì mà xinh thế...</string>
+    <string name="text_textview_notification">trả lời bình luận của bạn.</string>
+    <string name="text_textview_version">version 19.04.04.st_1</string>
+    <string name="text_textview_minhtri">Nguyễn Minh Trí</string>
+    <string name="text_textview_nguyensi">Đỗ Nguyễn Sĩ</string>
+    <string name="text_textview_mail_minhtri">nguyenminhtri455@gmail.com</string>
+    <string name="text_textview_mail_nguyensi">donguyensiit@gmail.com</string>
+    <string name="text_button_message">Nhắn Tin</string>
+    <string name="text_button_addfriend">Thêm Bạn</string>
+
+    <!--Notification-->
+    <string name="title_yes">Đồng ý</string>
+    <string name="title_no">Không đồng ý</string>
+    <string name="title_builder">Xác nhận đăng xuất</string>
+    <string name="message_builder">Bạn có chắc chắn bạn muốn thoát?</string>
+    <string name="notification_noconnection">Không có kết nối! Vui lòng kiểm tra internet của bạn.</string>
+    <string name="server_error">Lỗi máy chủ</string>
+    <string name="timeout_connection">Mất quá nhiều thời gian để kết nối, vui lòng thử lại sau!</string>
+    <string name="invalidate_date">Ngày không hợp lệ</string>
+    <string name="notification_welcom">Chào mừng!\t</string>
+    <string name="invalid_password">Mật khẩu phải có 6 ký tự và không có khoảng trắng</string>
+    <string name="invalid_email">Email sai định dạng</string>
+    <string name="invalid_phone_number">Số điện thoại phải gồm 10 số, bắt đầu bằng số 0!!!</string>
+    <string name="have_not_friend">Bạn không có liên lạc!</string>
+    <string name="content_add_friend">Đã gửi yêu cầu kết bạn tới bạn</string>
+    <string name="title_agree_add_friend">Đã trở thành bạn</string>
+    <string name="and">và</string>
+    <string name="you">Bạn</string>
+    <string name="image">[Hình ảnh]</string>
+
+    <!--ChatActivity-->
+    <string name="online">Online</string>
+    <string name="offline">Truy cập</string>
+    <string name="yesterday">hôm qua</string>
+    <string name="day_ago">ngày trước</string>
+    <string name="minute_ago">phút trước</string>
+    <string name="hours_ago">giờ trước</string>
+    <string name="members">thành viên</string>
+    <string name="scroll_unread_message">Tin nhắn chưa đọc</string>
+    <string name="notify_notfriend">Thêm bạn</string>
+    <string name="waitting_network">Đăng chờ mạng...</string>
+    <string name="sent_addfriend">Bạn đã gửi một yêu cầu kết bạn tới</string>
+    <string name="joined">\tTham gia nhóm</string>
+    <string name="left">\tRời khỏi nhóm</string>
+    <string name="change_avatar_room">\tđã thay đổi ảnh đại diện nhóm</string>
+    <string name="change_name_room">\tđã thay đổi tên nhóm</string>
+    <string name="error">Lỗi</string>
+    <string name="sending">Đang gửi</string>
+    <string name="sent">Đã gửi</string>
+    <string name="recevied">Đã nhận</string>
+    <string name="seen">Đã xem</string>
+
+    <!--NewRoom-->
+    <string name="new_room">Phòng Chat</string>
+    <string name="hint_name_room">Nhập tên phòng</string>
+    <string name="choose_member">Chọn thành viên</string>
+    <string name="hint_search_contact">Tìm kiếm theo tên, số điện thoại</string>
+    <string name="create">Tạo nhóm</string>
+    <string name="selected">Đã chọn: </string>
+    <string name="notify">Không tìm thấy kết quả phù hợp !!!</string>
+
+    <!--EditRoom-->
+    <string name="edit_room">Thông tin nhóm</string>
+    <string name="member">Thành viên</string>
+    <string name="add_member">+ Thêm thành viên</string>
+    <string name="leave_room">Rời nhóm</string>
+    <string name="save">Lưu</string>
+    <string name="title_leave_room">Xác nhận rời nhóm</string>
+    <string name="message_leave_room">Bạn đã chắc chắn rời khỏi nhóm ?</string>
+
+    <!--Invite Member-->
+    <string name="invite_member">Mời bạn bè</string>
+    <string name="add">Thêm</string>
+    <string name="hint_joined">đã tham gia</string>
+
+    <!--RoomFragment-->
+    <string name="group_participating">Nhóm đang tham gia</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

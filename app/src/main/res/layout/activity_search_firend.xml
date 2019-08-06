@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhile"
+    tools:context=".views.home.tabcontact.searchfriend.view.SearchFirendActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_searchfriend"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorBlue"
+            app:layout_collapseMode="pin"
+            app:title="@string/tab_title_search"
+            app:titleTextColor="@color/colorWhile"></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorGrey"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/text_textview_note_addfriend"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:id="@+id/edittext_search"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:backgroundTint="@color/colorWhile"
+                        android:hint="@string/hint_edittext_note_addfriend"
+                        android:inputType="number"
+                        android:paddingLeft="10dp" />
+
+                    <Button
+                        android:id="@+id/button_search"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/custom_backgroud_button_enable_disable"
+                        android:enabled="false"
+                        android:text="@string/text_button_search"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhile"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <View
+                android:id="@+id/divider_one"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/layout_search"
+                android:background="@color/colorGrey" />
+
+            <LinearLayout
+                android:id="@+id/layout_suggess"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/divider_one"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/text_textview_suggest_addfriend"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_notfriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/layout_suggess"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorWhile"
+                    android:orientation="horizontal"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/custom_item_add_contact"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_two"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/layout_suggess"
+                android:background="@color/colorGrey" />
+
+            <LinearLayout
+                android:id="@+id/layout_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_two"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_invited_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/text_textview_requets_addfriend"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/layout_request"
+                    android:layout_alignLeft="@+id/layout_request"
+                    android:layout_alignBottom="@+id/layout_request"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorWhile"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/custom_item_request"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

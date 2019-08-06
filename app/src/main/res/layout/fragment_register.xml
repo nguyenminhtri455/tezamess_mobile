@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".views.register.fragment.RegisterFagment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/text_textview_attention_register2"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/text_textview_attention2_register2"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/notification_noconnection"
+        android:textColor="@color/colorRed" />
+
+    <EditText
+        android:id="@+id/edittext_phonenumber_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/text_edittext_phone_register2"
+        android:inputType="number"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.example.appchat.customview.CustomPassword
+            android:id="@+id/edittext_password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_edittext_password_register2"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_backgroud_button_enable_disable"
+        android:enabled="false"
+        android:text="@string/text_button_register"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhile"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

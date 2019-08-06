@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.home.tabsetting.updateemail.UpdateEmailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_changeemail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBlue"
+        app:title="Update Email"
+        app:titleTextColor="@color/colorWhile"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_changeemail"
+        android:background="@color/colorGrey"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border_content_comment">
+
+            <com.example.appchat.customview.CustomPassword
+                android:id="@+id/edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhile"
+                android:hint="Password"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border_content_comment">
+
+            <EditText
+                android:id="@+id/edittext_new_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhile"
+                android:hint="New Email"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button_changeemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_backgroud_button_enable_disable"
+            android:enabled="false"
+            android:text="Update Email"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhile"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

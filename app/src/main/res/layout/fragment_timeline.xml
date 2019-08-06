@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefersh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_timeline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.appchat.customview.CircleImage
+                    android:id="@+id/imageview_avatar"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/account_icon" />
+
+                <TextView
+                    android:id="@+id/textview_post_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@id/img_screen"
+                    android:layout_toRightOf="@id/imageview_avatar"
+                    android:clickable="true"
+                    android:gravity="center|left"
+                    android:text="@string/text_textview_status"
+                    android:textColor="@drawable/custom_text_color_textview"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/img_screen"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_add_photo" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/layout_timeline"
+            android:background="@color/colorGrey" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/progressBarLoadMore"
+            android:layout_below="@+id/divider"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:itemCount="1"
+            tools:listitem="@layout/custom_item_status">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textview_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/server_error"
+            android:textColor="@color/colorRed"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/custom_border_progressbar"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLoadMore"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:indeterminateDrawable="@drawable/custom_border_progressbar"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="5dp"
+    tools:background="@color/colorWhile">
+
+    <com.example.appchat.customview.CircleImage
+        android:id="@+id/imageview_avatar"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="8dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/account_icon" />
+
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignRight="@id/imageview_avatar"
+        android:layout_alignBottom="@id/imageview_avatar"
+        android:background="@drawable/custom_round_notification"
+        android:backgroundTint="@color/colorGreen"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imageview_avatar"
+        android:text="@string/text_textview_name"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

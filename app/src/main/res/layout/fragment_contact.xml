@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhile">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants">
+
+            <TextView
+                android:id="@+id/textview_online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Contacts online"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_friend_online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_online"
+                tools:itemCount="2"
+                tools:listitem="@layout/custom_item_online"></android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/divider_online_friend"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/recyclerview_friend_online"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGrey" />
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerview_friend_online"
+                android:layout_margin="10dp"
+                android:text="All Contacts"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview_title"
+                tools:itemCount="3"
+                tools:listitem="@layout/custom_item_contact"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/textview_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerview_friend"
+                android:layout_centerHorizontal="true"
+                android:text="@string/have_not_friend"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/custom_border_progressbar"
+        android:visibility="visible" />
+
+
+</FrameLayout>

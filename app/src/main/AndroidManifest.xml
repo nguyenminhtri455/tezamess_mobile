@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appchat">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <application
+        android:name=".views.home.tabsetting.language.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_telegram"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".views.home.tabtimeline.poststatus.PostStatusActivity"></activity>
+        <activity android:name=".views.home.tabmessage.editroom.EditRoomActivity" />
+        <activity android:name=".views.home.tabmessage.newmember.NewMemberActivity" />
+        <activity android:name=".views.home.tabmessage.roomchat.ManyRoomActivity" />
+        <activity android:name=".views.home.tabmessage.newroom.NewRoomActivity" />
+        <activity android:name=".views.recoverpassword.RecoverPasswordActivity" />
+        <activity android:name=".views.home.tabsetting.profile.ProfileActivity" />
+        <activity android:name=".views.home.tabsetting.verificationemail.VerificationEmailActivity" />
+        <activity android:name=".views.home.tabsetting.updateemail.UpdateEmailActivity" />
+        <activity android:name=".views.home.tabsetting.changepassword.ChangePassActivity" />
+        <activity android:name=".views.home.ShareImageActivity" />
+        <activity android:name=".views.profileuser.ProfileUserActivity" />
+        <activity android:name=".views.home.tabcontact.searchfriend.view.SearchFirendActivity" />
+        <activity android:name=".views.home.tabsetting.about.AboutActivity" />
+        <activity
+            android:name=".views.home.tabmessage.roomchat.DoubleRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.register.RegisteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.welcome.WelcomActivity"
+            android:label="Tezamess"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

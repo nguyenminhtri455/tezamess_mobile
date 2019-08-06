@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name"></string>
+
+    <!--UI Login-->
+    <string name="tab_title_login">Login</string>
+    <string name="text_edittext_phonenumber">Phone number:</string>
+    <string name="text_edittext_password">Password:</string>
+    <string name="text_button_login">LOGIN</string>
+    <string name="text_textview_attention_login">If you do not already have an account. Please press the button below!</string>
+    <string name="text_button_register">REGISTER</string>
+    <string name="notification_login">Enter full information!</string>
+    <string name="text_textview_forgot_password">Forgot password?</string>
+
+    <!--UI Register-->
+    <string name="tab_title_register">Register</string>
+    <string name="text_textview_attention_register">What is Your Full Name?</string>
+    <string name="text_textview_attention2_register">Using real name makes you more recognizable.</string>
+    <string name="text_edittext_name_register">Enter your full name:</string>
+    <string name="text_button_next_register">NEXT</string>
+
+    <!--UI Register 2-->
+    <string name="tab_title_register2">Register</string>
+    <string name="text_textview_attention_register2">What is Your Phone Number?</string>
+    <string name="text_textview_attention2_register2">This number could be used to log in and reset your password.</string>
+    <string name="text_edittext_phone_register2">Enter your phone number:</string>
+    <string name="text_edittext_password_register2">Enter password:</string>
+    <string name="text_button_login_register2">LOG IN</string>
+
+    <!--UI Home-->
+    <string name="tab_item_message">Messages</string>
+    <string name="tab_item_contact">Contacts</string>
+    <string name="tab_item_timeline">Timeline</string>
+    <string name="tab_item_profile">Profile</string>
+    <string name="tab_item_setting">Setting</string>
+
+    <!--UI Message-->
+    <string name="text_textview_message">No recent conversations yet!</string>
+    <string name="text_button_create_message">Create conversation</string>
+    <string name="create_group">Create group</string>
+
+    <!--UI Contact-->
+    <string name="text_textview_contact_online">Contacts online</string>
+    <string name="text_textview_all_contact">All Contacts</string>
+
+    <!--UI TimeLine-->
+    <string name="tab_title_timeline">TimeLine</string>
+    <string name="text_textview_status">How are you today?</string>
+    <string name="post_status">Post Status</string>
+    <string name="post">Post</string>
+    <string name="enter_body">Please enter body</string>
+    <string name="notify_status">updated their status</string>
+
+    <!--UI Profile-->
+    <string name="tab_title_profile">Profile</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <!--UI Setting-->
+    <string name="tab_title_setting">Setting</string>
+    <string name="text_textview_profile">Profile</string>
+    <string name="text_textview_language">Language</string>
+    <string name="text_textview_about">About</string>
+    <string name="text_textview_logout">Log Out</string>
+    <string name="text_textview_changepassword">Change Password</string>
+
+    <!--Room Chat-->
+    <string name="tab_title_roomchat">Message</string>
+    <string name="texthint_edittext_roomchat">Message</string>
+    <string name="textview_text_online_roomchat">Online</string>
+    <string name="textview_text_offline_roomchat">Offline</string>
+
+    <!--View Profile Activity-->
+    <string name="tab_title_view_profile">Profile</string>
+    <string name="textview_name_view_profile">Name</string>
+    <string name="textview_email_view_profile">Rescue email</string>
+    <string name="textview_verify_email_view_profile">Verify email address...(optional)</string>
+    <string name="textview_gender_view_profile">Gender</string>
+    <string name="textview_birthday_view_profile">Birthday</string>
+    <string name="textview_phone_view_profile">Phone number</string>
+    <string name="text_button_view_profile">Edit info</string>
+
+    <!--Edit Profile Activity-->
+    <string name="tab_title_edit_profile">Edit Profile</string>
+    <string name="textview_male_view_profile">Male</string>
+    <string name="textview_female_view_profile">Female</string>
+    <string name="text_button_edit_profile">Update</string>
+
+    <!--Notification Activity-->
+    <string name="tab_title_notification">New notification</string>
+
+    <!--About Activity-->
+    <string name="tab_title_about">About</string>
+
+    <!--ChangePass Activity-->
+    <string name="tab_title_changepass">Change Your Password</string>
+    <string name="hint_edittext_password_using">Old Password</string>
+    <string name="hint_edittext_password_new">New Password</string>
+    <string name="hint_edittext_password_reenter">Reenter Password</string>
+    <string name="text_button_update_password">Update Password</string>
+
+    <!--Verification Email Activity-->
+    <string name="tab_title_verification_email">Email Verification</string>
+    <string name="text_textview_note_confirm_email">Please enter your email address. We will rescue you when you forget your password.</string>
+    <string name="hint_edittext_email_address">Email address: abc@gmail.com</string>
+    <string name="text_button_confirm_email">save changes</string>
+
+
+    <!--Language Activity-->
+    <string name="tab_title_language">Language</string>
+    <string name="text_textview_change_language">Change language</string>
+    <string name="text_textview_vietnamese_language">Vietnamese</string>
+    <string name="text_textview_english_language">English</string>
+
+    <!--Search Activity-->
+    <string name="tab_title_search">Search Friend</string>
+    <string name="text_textview_note_addfriend">Add friend by phone number</string>
+    <string name="hint_edittext_note_addfriend">Enter your phone number</string>
+    <string name="text_button_search">Search</string>
+    <string name="text_textview_requets_addfriend">Friend Requests</string>
+    <string name="text_textview_suggest_addfriend">People You May Know</string>
+    <string name="text_button_add">Add</string>
+    <string name="text_button_agree">Agree</string>
+    <string name="text_button_delete">Delete</string>
+
+    <!--Profile User Activity-->
+    <string name="tab_title_profileuser">Profile</string>
+    <string name="title_unfriend">Confirm unfriend</string>
+    <string name="confirm_unfriend">Are you sure want to unfriend with</string>
+    <string name="agree">Agree</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="un_friend">Unfriend</string>
+    <string name="add_friend">Add Friend</string>
+
+    <!--General Use-->
+    <string name="text_textview_name">Your Name</string>
+    <string name="text_textview_gender">Male</string>
+    <string name="text_textview_birthday">02/01/1997</string>
+    <string name="text_textview_phone">0362393986</string>
+    <string name="text_textview_content">You: I love you baby</string>
+    <string name="text_textview_time">16:03</string>
+    <string name="text_textview_create_time">5 hours ago</string>
+    <string name="text_textview_create_status">Sáng sớm đi học, bây giờ quá buồn ngủ..</string>
+    <string name="text_textview_like">5k</string>
+    <string name="text_textview_comment">4k</string>
+    <string name="text_textview_content_message">Hello! Chào Cậu..</string>
+    <string name="text_textview_content_comment">Dạo này ăn gì mà xinh thế...</string>
+    <string name="text_textview_notification">trả lời bình luận của bạn.</string>
+    <string name="text_textview_version">version 19.04.04.st_1</string>
+    <string name="text_textview_minhtri">Nguyễn Minh Trí</string>
+    <string name="text_textview_nguyensi">Đỗ Nguyễn Sĩ</string>
+    <string name="text_textview_mail_minhtri">nguyenminhtri455@gmail.com</string>
+    <string name="text_textview_mail_nguyensi">donguyensiit@gmail.com</string>
+    <string name="text_button_message">Message</string>
+    <string name="text_button_addfriend">Add Friend</string>
+
+    <!--Notification-->
+    <string name="title_yes">Yes</string>
+    <string name="title_no">No</string>
+    <string name="title_builder">Confirm logout</string>
+    <string name="message_builder">Are you sure you want to logout?</string>
+    <string name="notification_noconnection">Not Connected! Please check your internet.</string>
+    <string name="server_error">Server Error</string>
+    <string name="timeout_connection">It takes too long to connect, please try again later!</string>
+    <string name="invalidate_date">Date invalidate</string>
+    <string name="notification_welcom">Welcom!\t</string>
+    <string name="invalid_password">Password must be 6 characters and have not whilespace</string>
+    <string name="invalid_email">Wrong email format</string>
+    <string name="invalid_phone_number">Phone number must contain 10 numbers, starting with 0 !!!</string>
+    <string name="have_not_friend">You have no contacts !</string>
+    <string name="content_add_friend">has sent a friend request to you</string>
+    <string name="title_agree_add_friend">became friends</string>
+    <string name="and">and</string>
+    <string name="you">You</string>
+    <string name="image">[Image]</string>
+
+    <!--ChatActivity-->
+    <string name="online">Online</string>
+    <string name="offline">Last seen</string>
+    <string name="yesterday">yesterday</string>
+    <string name="minute_ago">minute ago</string>
+    <string name="day_ago">day ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="members">members</string>
+    <string name="scroll_unread_message">Scroll to unread message</string>
+    <string name="notify_notfriend">Add friend</string>
+    <string name="waitting_network">Waitting network...</string>
+    <string name="sent_addfriend">You sent a friend request to</string>
+
+    <string name="joined">\tjoined the group</string>
+    <string name="left">\tleft the group</string>
+    <string name="change_avatar_room">\tchanged the image of the group</string>
+    <string name="change_name_room">\tchanged the name of the group</string>
+    <string name="error">Error</string>
+    <string name="sending">Sending</string>
+    <string name="sent">Sent</string>
+    <string name="recevied">Recevied</string>
+    <string name="seen">Seen</string>
+
+
+    <!--NewRoom-->
+    <string name="new_room">New Room</string>
+    <string name="hint_name_room">Enter room name</string>
+    <string name="choose_member">Choose member</string>
+    <string name="hint_search_contact">Search by name, phone number</string>
+    <string name="create">Create</string>
+    <string name="selected">Selected: </string>
+    <string name="notify">No matching results were found !!!</string>
+
+    <!--EditRoom-->
+    <string name="edit_room">Edit room</string>
+    <string name="member">Members</string>
+    <string name="add_member">+ Add member</string>
+    <string name="leave_room">Leave room</string>
+    <string name="save">Save</string>
+    <string name="title_leave_room">Confirm leave room</string>
+    <string name="message_leave_room">Are you sure you want to leave room ?</string>
+
+    <!--Invite Member-->
+    <string name="invite_member">Invite Friend</string>
+    <string name="add">Add</string>
+    <string name="hint_joined">joined</string>
+
+    <!--RoomFragment-->
+    <string name="group_participating">Joined groups</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_addgroup"
+        android:icon="@drawable/ic_speaker_group_while_24dp"
+        android:title="addgroup"
+        app:actionLayout="@layout/custom_menu_creategroup"
+        app:showAsAction="always" />
+</menu>

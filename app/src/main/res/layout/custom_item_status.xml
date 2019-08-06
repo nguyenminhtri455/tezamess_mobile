@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.example.appchat.customview.CircleImage
+            android:id="@+id/imageview_avatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/account_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_textview_name"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_createdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/text_textview_create_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_textview_create_status"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:transitionName="imagetransition"
+        android:id="@+id/imageview_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_body"
+        android:layout_marginTop="10dp"
+        android:maxHeight="500dp"
+        android:minHeight="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo_status" />
+
+
+    <ImageView
+        android:id="@+id/img_like"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/imageview_status"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/unlike" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_status"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_like"
+        android:text="@string/text_textview_like"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img_comment"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/imageview_status"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button_comment"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_status"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_comment"
+        android:text="@string/text_textview_comment"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>
